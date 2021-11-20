@@ -18,3 +18,6 @@ def teams(request):
 
 def teams19(request):
     return render(request,"teams2019.html")
+
+def events(request):
+    return render(request,"events.html")    
