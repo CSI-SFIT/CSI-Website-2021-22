@@ -1,6 +1,7 @@
 from django.http import response
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Event
 
 # Create your views here.
 def home(request):
@@ -20,4 +21,4 @@ def teams19(request):
     return render(request,"teams2019.html")
 
 def events(request):
-    return render(request,"events.html")    
+    return render(request,"events.html",{"events":Event.objects.all()})    
