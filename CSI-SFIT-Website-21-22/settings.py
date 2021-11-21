@@ -20,8 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ri1#khal_1nn%b8uu#rkyrs-@+)8x$+1j!ss**+tv#qx09u!6_'
+SECRET_KEY = os.environ.get("SECRET_KEY")
+CSI_MONGO_USR = os.environ.get("CSI_MONGO_USR")
+CSI_MONGO_PASS = os.environ.get("CSI_MONGO_PASS")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,9 +78,15 @@ WSGI_APPLICATION = 'CSI-SFIT-Website-21-22.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "djongo",
+        "CLIENT": {
+            'name': 'CSIWebsiteDB',
+            'host': 'mongodb+srv://'+CSI_MONGO_USR+':'+CSI_MONGO_PASS+'@cluster0.wwria.mongodb.net/CSIWebsiteDB?retryWrites=true&w=majority',
+            'username': CSI_MONGO_USR,
+            'password': CSI_MONGO_PASS,
+            "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 
