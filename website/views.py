@@ -22,3 +22,8 @@ def teams19(request):
 
 def events(request):
     return render(request,"events.html",{"events":Event.objects.all()})    
+
+
+def event_pages(request, event_url):
+    print(Event.objects.get(url=event_url))
+    return render(request, "event.html", {"event": Event.objects.get(url=event_url)})
