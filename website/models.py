@@ -9,6 +9,7 @@ class Event(models.Model):
 	url = models.CharField(max_length=200, unique=True, verbose_name="URL (auto generated. Don't touch)")
 	createdTime = models.DateTimeField(auto_now_add=True)
 	updatedTime = models.DateTimeField(auto_now=True)
+	date = models.DateTimeField(verbose_name="Date of Event")
 	title = models.CharField(max_length=100, null=True,verbose_name="Title")
 	content = models.TextField(null=True,verbose_name="Content")
 	registrationLink = models.CharField(max_length=200, null=True,verbose_name="Registration Link")
@@ -17,8 +18,8 @@ class Event(models.Model):
 		return(self.title)
 
 def path_and_rename(instance, filename):
-	upload_to = 'website/static/website/images/event_images/'
-	filename=instance.event.title+str(len(Images.objects.filter(event=instance.event)))+'.jpg'
+	upload_to = 'static/website/images/event_images/'
+	filename=instance.event.url+'-'+str(len(Images.objects.filter(event=instance.event)))+'.jpg'
 	return os.path.join(upload_to, filename)
 
 class Images(models.Model):

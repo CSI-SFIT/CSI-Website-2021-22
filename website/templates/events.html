@@ -84,15 +84,17 @@
                 {% for event in events %}
                 <article class="postcard dark red" style="
                 margin-top: 80px;">
-                    <a class="postcard__img_link" href="#">
-                        <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+                    {%if event.images.all %}
+                    <a class="postcard__img_link" href="/e/{{event.url}}">
+                        <img class="postcard__img" src="{%for image in event.images.all%}{% if forloop.first %}{{image.image.url}}{%endif%}{%endfor%}" alt="Image Title" />
                     </a>
+                    {%endif%}
                     <div class="postcard__text" style="
                     padding-left: 50px;">
-                        <h1 class="postcard__title blue"><a href="#">{{event.title}}</a></h1>
+                        <h1 class="postcard__title blue"><a href="/e/{{event.url}}">{{event.title}}</a></h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"></i>{{event.updatedTime|date:"M d, Y"}}
+                                <i class="fas fa-calendar-alt mr-2"></i>{{ event.date|date:"d M Y" }}, {{ event.date|time:"h:i A" }}
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
@@ -132,7 +134,7 @@
                         <p>
                        <i class="fas icon fa-university hvr-underline-reveal"></i> ST.Francis institute of technology  <br>
                        <i class="fas icon fa-map-marked-alt"></i> Mount Poinsur, S.V.P. Road, Borivali (West),<br> Mumbai 400 103 <br>
-                       <i class="fas icon fa-envelope"></i> sfedu@sfit.ac.in<br>
+                       <i class="fas icon fa-envelope"></i>csi@sfit.ac.in<br>
                        <i class="fas icon fa-phone-volume"> </i> 022-28954787
                     
                         </p>
