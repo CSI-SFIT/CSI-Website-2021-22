@@ -1,4 +1,14 @@
-
+@font-face {
+	font-family: DAGGERSQUARE;
+	src: url(./DAGGERSQUARE.otf);
+}
+#navbar-logo{
+    font-family: DAGGERSQUARE;
+	font-size: 27px;
+	transform: scale(1.2, 1);
+    position: relative;
+    bottom: 23px;
+}
 .tranparent{
     font-size:6rem;
     color: transparent;
