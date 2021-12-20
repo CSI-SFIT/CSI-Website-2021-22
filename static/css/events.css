@@ -9,6 +9,11 @@
     position: relative;
     bottom: 20px;
 }
+@media screen and (max-width: 375px) {
+    h1{
+        font-size:8rem;
+    }
+}
 .tranparent{
     font-size:6rem;
     color: transparent;
@@ -3525,7 +3530,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 22rem;
+    font-size: 15rem;
     font-weight: 600;
     letter-spacing: -.04em;
     line-height: 1;
@@ -3968,6 +3973,9 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 400px) {
     .s-header__logo {
         left: 3.2rem;
+    }
+    .social{
+        font-size: 8rem;
     }
     .s-header__menu-toggle {
         right: 3.2rem;
@@ -5280,7 +5288,7 @@ html.no-csstransitions .s-hero__content {
      height:80%;
    }
     }
-  
+   
   
   
   

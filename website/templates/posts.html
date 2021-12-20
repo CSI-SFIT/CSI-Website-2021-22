@@ -1,32 +1,109 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+<head>
 
-    <section style="padding-bottom:1px">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>CSI SFIT</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+{% load static %}
+    <!-- CSS
+    ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "\css\events.css"%}">
+    
+    
+
+    <!-- script
+    ================================================== -->
+    <script defer src="{%static "js/fontawesome/all.min.js"%}"></script>
+    <script src="{%static "js/modernizr.js"%}"></script>
+      <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href={%static "apple-touch-icon.png" %}>
+<!--     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a href="/">
+                <h2 id="navbar-logo" style= "font-family: 'DaggerSquare';margin-top: 0px;padding-right: 10px;font-size:30px; padding-top: 50px;">CSI SFIT</h2>
+            </a>
+        </div>
+
+        <div class="s-header__content">
+    
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class=" hvr-underline-from-center" href="/" title="Intro">Home</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/aboutus/" title="About">About</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/teams/" title="Services">Teams</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/events/" title="Events">Events</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/posts/" title="Works">Posts</a></li>
+                </ul>
+            </nav>  <!-- end s-header__nav-wrap -->
+
+            <a href="mailto:#0" class="btn btn--primary btn--small">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+                Contact us
+            </a>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+    
+<!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
 
         
 
-        <div>
-           <h1>             </h1>
+        <div class="row s-hero__content social">
+            <div class="column">
+
+                <h1 class="social">Our Social Media Posts</h1>
+                <div class="s-hero__content-about">
+
+                    
+    
+                </div>
+
+            </div>
         </div>
 
 
-        
-    </section> 
-    <section >
-
-        
-
-        <div>
-           <h1>             </h1>
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                Scroll Down
+            </a>
         </div>
 
-
-        
-    </section><!-- end s-hero -->
+    </section> <!-- end s-hero -->
+   
 
 
     <!-- hero
@@ -34,7 +111,7 @@
     
     
 
-<section id="posts" style="padding-top:40px;">
+<section id="posts" >
     <!-- Place <div> tag where you want the feed to appear -->
     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered
             by Curator.io</a></div>
@@ -50,11 +127,59 @@
 </section>
   
 
+  <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="finalcon" style="margin-left: 15%;">
+
+            <div class=" ">
+                <div class="">
+                    <div class=" large-10 tab-12 s-footer__block">
+                        <h4 class="h6">Where to Find Us</h4>
+        
+                        <p>
+                       <i class="fas icon fa-university hvr-underline-reveal"></i> ST.Francis institute of technology  <br>
+                       <i class="fas icon fa-map-marked-alt"></i> Mount Poinsur, S.V.P. Road, Borivali (West),<br> Mumbai 400 103 <br>
+                       <i class="fas icon fa-envelope"></i> sfedu@sfit.ac.in<br>
+                       <i class="fas icon fa-phone-volume"> </i> 022-28954787
+                    
+                        </p>
+                    </div>
+        
+                    <div class=" large-5 tab-12 s-footer__block">
+                        <h4 class="h6">Follow Us</h4 class="h6">
+        
+                        <ul class="social-i">
+                            <a href="https://github.com/CSI-SFIT"><i class="fab links fa-github fa-2x"></i></a>
+                            <a href="https://www.instagram.com/csi_sfit/"><i class="fab links fa-instagram fa-2x"></i></a>
+                           <a href="https://www.linkedin.com/company/csi-sfit/mycompany/"> <i class="fab links fa-linkedin fa-2x"></i></a>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
 
 
-{% endblock content %}
-{% block footend %}
-{% endblock footend %}
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div> <!-- end ss-go-top -->
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+
 
 
 </body>
