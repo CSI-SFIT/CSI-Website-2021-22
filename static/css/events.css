@@ -1590,8 +1590,11 @@ h1, .h1 {
 h2, .h2, h3, .h3, h4, .h4 {
     margin-top: var(--vspace-2);
     margin-bottom: var(--vspace-0_5);
+    text-align: center;
 }
-
+.pre{
+    margin-bottom:50px;
+}
 h5, .h5, h6, .h6 {
     margin-top: var(--vspace-1_5);
     margin-bottom: var(--vspace-0_5);
@@ -1608,11 +1611,15 @@ h1, .h1 {
         font-size: var(--text-xxxl);
         line-height: var(--vspace-1_75);
     }
+    .pre{
+font-size: 25px;
+    }
 }
 
 h2, .h2 {
     font-size: var(--text-xxl);
     line-height: var(--vspace-1_5);
+ 
 }
 
 h3, .h3 {
@@ -5288,7 +5295,7 @@ html.no-csstransitions .s-hero__content {
      height:80%;
    }
     }
-   
+  
   
   
   
