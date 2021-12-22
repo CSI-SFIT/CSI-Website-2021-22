@@ -20,6 +20,9 @@ def teams(request):
 def teams19(request):
     return render(request,"teams2019.html")
 
+def teams21(request):
+    return render(request,"teams21.html")
+
 def events(request):
     return render(request,"events.html",{"events":Event.objects.all()})    
 

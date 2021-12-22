@@ -16,17 +16,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
+    {% load static %}
     <!-- CSS
     ================================================== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="teams21.css">
-    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href= {% static "/css/teams21.css" %}>
+    <link rel="stylesheet" href={% static "/css/vendor.css" %}>
 
     <!-- script
     ================================================== -->
-    <script src="../js/modernizr.js"></script>
-    <script defer src="../js/fontawesome/all.min.js"></script>
+    <script src={% static '/js/modernizr.js' %}></script>
+    <script defer src={% static 'js/fontawesome/all.min.js' %}></script>
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -50,8 +50,8 @@
     <header class="s-header">
 
         <div class="s-header__logo">
-            <a href="index.html">
-                <img src="../images/logo.svg" alt="Homepage">
+            <a href="/">
+                <img src={% static '/images/logo.svg' %} alt="Homepage">
             </a>
         </div>
 
@@ -59,9 +59,9 @@
 
             <nav class="s-header__nav-wrap">
                 <ul class="s-header__nav">
-                    <li><a class=" hvr-underline-from-center" href="index.html" title="Intro">Home</a></li>
-                    <li><a class=" hvr-underline-from-center" href="aboutus.html" title="About">About</a></li>
-                    <li><a class=" hvr-underline-from-center" href="teams.html" title="Services">Team</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/" title="Intro">Home</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/aboutus/" title="About">About</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/teams21/" title="Services">Team</a></li>
                     <li><a class=" hvr-underline-from-center" href="#portfolio" title="Works">Works</a></li>
                 </ul>
             </nav>
@@ -94,10 +94,10 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbtn">Team 20-21 <i class="fas fa-chevron-down"></i></button>
+            <button class="dropbtn">Team 2021-22 <i class="fas fa-chevron-down"></i></button>
             <div class="dropdown-content">
-                <a href="#">Team 2019-20</a>
-                <a href="#">Team 2021-22</a>
+                <a href="/teams/">Team 2020-21</a>
+                <a href="/teams19/">Team 2019-20</a>
 
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/shamsuddin.png" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/shamsuddin.png' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-tw" href="https://www.linkedin.com/in/shamsuddin-salauddin-b3444160/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-fb" href="mailto:shamsuddinkhan@sfit.ac.in" target="_blank"><i class="fas fa-envelope"></i></i></a>
@@ -134,7 +134,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/amrita.png" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-tw" href="https://www.linkedin.com/in/amrita-mathur-1564141a3/"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-fb" href="mailto:amritamathur@sfit.ac.in"><i class="fas fa-envelope"></i></i></a>
@@ -162,7 +162,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Varun_Patkar.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Varun_Patkar.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-tw" href="https://twitter.com/Varun_Patkar" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
                                 <a class="social-li" href="https://www.linkedin.com/in/varun-patkar/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -179,7 +179,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Ekta_Masrani.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Ekta_Masrani.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-tw" href="https://twitter.com/MasraniEkta" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
                                 <a class="social-li" href="https://www.linkedin.com/in/ekta-masrani/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -206,7 +206,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Harsh_Daitkar.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Harsh_Daitkar.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/harshh007" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-li" href="https://www.linkedin.com/in/harsh-daitkar/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -222,7 +222,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Kaif_Kohari.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Kaif_Kohari.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Kaif10" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-li" href="https://www.linkedin.com/in/komal-torlikonda-9057b813b" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -268,7 +268,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Vedant_Kadam.jpeg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Vedant_Kadam.jpeg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/vedantkadam" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-li" href="https://www.linkedin.com/in/vedant-kadam-412021204/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
@@ -284,7 +284,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Minoli_Bagwe.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Minoli_Bagwe.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/minolibagwe" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:minolibagwe@gmail.com"><i class="fas fa-envelope"></i></i></a>
@@ -299,7 +299,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Deep_Kotian.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Deep_Kotian.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/deepKotian" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -342,7 +342,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Shruti_Humbal.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Shruti_Humbal.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Shrutihumbal" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -356,7 +356,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Sakshi_Bhosle.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Sakshi_Bhosle.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://www.linkedin.com/in/shivani-raul-9328791a7/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-li" href="https://github.com/shivani-raul" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
@@ -382,7 +382,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Allan_Rodriques.jpg" alt="Team Image">
+                            <img src={% static "/images/Team_2021-2022/Allan_Rodriques.jpg" %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-in" href="https://github.com/Allanrodriques"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:allanrodriques2001@gmail.com"><i class="fas fa-envelope"></i></i></a>
@@ -398,7 +398,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Jasleen_Bindra.JPG" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Jasleen_Bindra.JPG' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="http://linkedin.com/in/jasleen-bindra-a87694215" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-li" href="https://github.com/JasleenBindra" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
@@ -414,7 +414,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Arjun_Bedi.png" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Arjun_Bedi.png' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Arjunb17" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -437,7 +437,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Anurag_Yadav.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Anurag_Yadav.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Anurag0605" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:anurag.yadav6503@gmail.com"><i class="fas fa-envelope"></i></i></a>
@@ -454,7 +454,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Saurav_Sharma.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Saurav_Sharma.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Saurav6S" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -468,7 +468,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Rushi_More.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Rushi_More.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/DarkA189" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -492,7 +492,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/IMG_20211206_122017.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/IMG_20211206_122017.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/TheNerdyCoder" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:mahajanvedant226@gmail.com"><i class="fas fa-envelope"></i></i></a>
@@ -507,7 +507,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Nilesh_Tiwari.png" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Nilesh_Tiwari.png' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Nil-786" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:nileshtiwari204203@gmail.com"><i class="fas fa-envelope"></i></i></a>
@@ -524,7 +524,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Esha_Dhuri.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Esha_Dhuri.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Esha-Dhuri" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                                 <a class="social-fb" href="mailto:esha.dhuri02@gmail.com "><i class="fas fa-envelope"></i></i></a>
@@ -552,7 +552,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/parbatsingh_Rajpurohit.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/parbatsingh_Rajpurohit.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://www.linkedin.com/in/parbat-singh-8b9305218/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-li" href="https://github.com/parbat680" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
@@ -568,7 +568,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Greeshma_Hedvikar.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Greeshma_Hedvikar.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://www.linkedin.com/in/greeshma-hedvikar-582246216/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-li" href="https://github.com/greeeshmaaa" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
@@ -585,7 +585,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Raj_Vanniyar.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Raj_Vanniyar.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://www.linkedin.com/in/raj-vanniyar-896a36202" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-li" href="https://github.com/R4JV4N5" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
@@ -626,7 +626,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Mahin Shetty.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Mahin Shetty.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/mahinshetty" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -640,7 +640,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Arya_Ankolekar.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Arya_Ankolekar.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Aryaankolekar" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -664,7 +664,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Nathan_Vaz.png" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Nathan_Vaz.png' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/nathanvaz10" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -678,7 +678,7 @@
                 <div class="column mx-auto">
                     <div class="team-3">
                         <div class="team-img">
-                            <img src="Team_2021-2022/Priyanka_Kambli.jpg" alt="Team Image">
+                            <img src={% static '/images/Team_2021-2022/Priyanka_Kambli.jpg' %} alt="Team Image">
                             <div class="team-social">
                                 <a class="social-li" href="https://github.com/Priyanka-Kambli" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
                             </div>
@@ -743,9 +743,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
+    <script src={% static 'js/jquery-3.2.1.min.js' %}></script>
+    <script src={% static 'js/plugins.js' %}></script>
+    <script src={% static 'js/main.js' %}></script>
 
 </body>
 
