@@ -58,7 +58,7 @@
                 <ul class="s-header__nav">
                     <li><a class=" hvr-underline-from-center" href="/" title="Intro">Home</a></li>
                     <li><a class=" hvr-underline-from-center" href="/aboutus/" title="About">About</a></li>
-                    <li><a class=" hvr-underline-from-center" href="/teams21/" title="Services">Teams</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/teams/" title="Services">Teams</a></li>
                     <li><a class=" hvr-underline-from-center" href="/events/" title="Events">Events</a></li>
                     <li><a class=" hvr-underline-from-center" href="/posts/" title="Works">Posts</a></li>
                 </ul>
@@ -102,142 +102,54 @@
                         </div>
                         <div class="postcard__bar"></div>
                         <div class="postcard__preview-txt">{{event.content|truncatechars:255}}</div>
+                        {%if event.registrationLink%}
                         <ul class="postcard__tagbox">
                             <li class="tag__item play blue">
                                 <a href="{{event.registrationLink}}" target="_blank"><i class="fa fa-user-plus" aria-hidden="true"></i>Register Now</a>
                             </li>
                         </ul>
+                        {%endif%}
                     </div>
                 </article>
                 {% endfor %}
             </div>
         </section>
         
-
+{%if previousEvents%}
 <h2 class="pre">Our Previous Events</h2>
 
 
         <section class="timeline">
             <div class="container">
-              <div class="timeline-item">
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content js--fadeInLeft">
-                  <h2>Title</h2>
-                  <div class="date">1 MAY 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div> 
-          
+              {%for previousEvent in previousEvents %}
               <div class="timeline-item">
           
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content timeline-card js--fadeInRight">
                   <div class="timeline-img-header">
-                    <h2>Card Title</h2>
+                  {%for image in previousEvent.images.all%}
+                  {% if forloop.first %}
+                  <img class="timeline-img-header"
+                    width="500px"
+                    src="{{image.image.url}}"
+                    alt="Image Title" />
+                  {%endif%}
+                  {%empty%}
+                  <img class="timeline-img-header" width="500px" src="/static/website/images/black.jpg" alt="Image Title" />
+                  {%endfor%}
+                    <h2>{{previousEvent.title}}</h2>
                   </div>
-                  <div class="date">25 MAY 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                  <div class="date">{{ previousEvent.date|date:"d M Y" }}, {{ previousEvent.date|time:"h:i A" }}</div>
+                  <p>{{previousEvent.content|truncatechars:210}}</p>
                   <a class="bnt-more" href="javascript:void(0)">More</a>
                 </div>
           
               </div>   
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content js--fadeInLeft">
-                  <div class="date">3 JUN 2016</div>
-                  <h2>Quote</h2>
-                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-                </div>
-              </div>   
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content js--fadeInRight">
-                  <h2>Title</h2>
-                  <div class="date">22 JUN 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div>   
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content timeline-card js--fadeInLeft">
-                  <div class="timeline-img-header">
-                    <h2>Card Title</h2>
-                  </div>
-                  <div class="date">10 JULY 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div>   
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content timeline-card js--fadeInRight">
-                  <div class="timeline-img-header">
-                    <h2>Card Title</h2>
-                  </div>
-                  <div class="date">30 JULY 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div>  
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content js--fadeInLeft">
-                  <div class="date">5 AUG 2016</div>
-                  <h2>Quote</h2>
-                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-                </div>
-              </div>   
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content timeline-card js--fadeInRight">
-                  <div class="timeline-img-header">
-                    <h2>Card Title</h2>
-                  </div>
-                  <div class="date">19 AUG 2016</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div>  
-          
-              <div class="timeline-item">
-          
-                <div class="timeline-img"></div>
-          
-                <div class="timeline-content js--fadeInLeft">
-                  <div class="date">1 SEP 2016</div>
-                  <h2>Title</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                  <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-              </div>   
-          
-          
-          
+              {%endfor%}
             </div>
           </section>
-          
+{%endif%}
           
         
 </section>
