@@ -61,7 +61,7 @@
                 <ul class="s-header__nav">
                     <li><a class=" hvr-underline-from-center" href="/" title="Intro">Home</a></li>
                     <li><a class=" hvr-underline-from-center" href="/aboutus/" title="About">About</a></li>
-                    <li><a class=" hvr-underline-from-center" href="/teams/" title="Services">Teams</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/teams21/" title="Services">Teams</a></li>
                     <li><a class=" hvr-underline-from-center" href="/events/" title="Events">Events</a></li>
                     <li><a class=" hvr-underline-from-center" href="/posts/" title="Works">Posts</a></li>
                 </ul>
@@ -85,18 +85,18 @@
        
 
         <div >
-            <h3 class="eve-name" style=" text-decoration: underline; text-decoration-color: red ; text-underline-offset: 2px;" >Event Name : Lorem ipsum dolor sit neque pariatur.</h3>
+            <h3 class="eve-name" style=" text-decoration: underline; text-decoration-color: red ; text-underline-offset: 2px;" >{{event.title}}</h3>
+            {%if event.images.all%}
             <div class="swiper mySwiper" data-swiper-autoplay="2000">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">  <img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image">  </div>
-                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
-                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
-                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
-                  
+                {% for image in event.images.all %}
+                  <div class="swiper-slide">  <img src={{image.image.url}} alt="Team Image">  </div>
+                {%endfor%}
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
+            {%endif%}
         </div>
 
         
@@ -105,12 +105,14 @@
 
     </section> <!-- end s-hero -->
 
-    <div class="container">
+    <div class="container" {%if event.images.all%}{%else%} style={{""}} {%endif%}>
       
         <div id="content1">
 <div>
-    <p class="info1">Date</p>
-    <p class="info">24th December 2021</p>
+    <p class="info1">Date And Time</p>
+    <p class="info"><time datetime="2020-05-25 12:00:00">
+        <i class="fas fa-calendar-alt mr-2"></i>  {{ event.date|date:"d M Y" }}, {{ event.date|time:"h:i A" }}
+    </time></p>
 </div>
         </div>
         <div id="content2">
@@ -129,20 +131,7 @@
       </div>
     
     <div class="desc_p">
-        <h2 class="new ">Description</h2>
-        
-        <p class="des-para" >Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
-            teur Lorem exercitation eiusmod pariatur.
-        
-            Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
-            teur Lorem exercitation eiusmod pariatur.
-        
-        </p>
-    
-        <p class="des-para" style="padding-top: 0px;">Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
-            teur Lorem exercitation eiusmod pariatur.
-        
-            
+        <p class="des-para" >{{event.content}}
         </p>
      </div>
 
