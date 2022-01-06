@@ -15,11 +15,11 @@
 <body id="top">
     <div>
         <h3 class="eve-name" style=" text-decoration: underline; text-decoration-color: red ; text-underline-offset: 2px;">
-            {{event.title}}</h3>
-        {%if event.images.all%}
+            {{previousEvent.title}}</h3>
+        {%if previousEvent.images.all%}
         <div class="swiper mySwiper" data-swiper-autoplay="2000">
             <div class="swiper-wrapper">
-                {% for image in event.images.all %}
+                {% for image in previousEvent.images.all %}
                 <div class="swiper-slide"> <img src={{image.image.url}} alt="Team Image"> </div>
                 {%endfor%}
             </div>
@@ -34,7 +34,7 @@
 <div>
     <p class="info1">Date And Time</p>
     <p class="info"><time datetime="2020-05-25 12:00:00">
-        <i class="fas fa-calendar-alt mr-2"></i>  {{ event.date|date:"d M Y" }}, {{ event.date|time:"h:i A" }}
+        <i class="fas fa-calendar-alt mr-2"></i>  {{ previousEvent.date|date:"d M Y" }}, {{ previousEvent.date|time:"h:i A" }}
     </time></p>
 </div>
         </div>
@@ -54,7 +54,7 @@
       </div>
     
     <div class="desc_p">
-        <p class="des-para" >{{event.content}}
+        <p class="des-para" >{{previousEvent.content}}
         </p>
      </div>
 
