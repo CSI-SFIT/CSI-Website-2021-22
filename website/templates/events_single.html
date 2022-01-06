@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>CSI SFIT</title>
+    <link rel="icon" type="image/x-icon" href="..\static\images\favicon\Logo.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <!-- CSS
+    ================================================== -->
+   
+    <link rel="stylesheet" href="{% static "\css\evesingle.css"%}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    
+   
+
+    <!-- script
+    ================================================== -->
+    
+    <script src="{%static "js/typed.js" %}"></script>
+    <script src="{%static "js/modernizr.js" %}"></script>
+    <script defer src="{%static "js/fontawesome/all.min.js" %}"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <script src="{%static "js/script.js" %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{%static "apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="Logo1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Logo1.png">
+    <link rel="manifest" href="{%static 'site.webmanifest'%}">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a href="/">
+                <h2 id="navbar-logo" style="font-family: 'DaggerSquare';margin-top: 0px;padding-right: 10px;font-size:27px;margin-bottom: 0px;bottom: 0px;">CSI SFIT</h2>
+            </a>
+        </div>
+
+        <div class="s-header__content">
+    
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class=" hvr-underline-from-center" href="/" title="Intro">Home</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/aboutus/" title="About">About</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/teams/" title="Services">Teams</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/events/" title="Events">Events</a></li>
+                    <li><a class=" hvr-underline-from-center" href="/posts/" title="Works">Posts</a></li>
+                </ul>
+            </nav>  <!-- end s-header__nav-wrap -->
+
+            <a href="mailto:#0" class="btn btn--primary btn--small">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+                Contact us
+            </a>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header>
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+       
+
+        <div >
+            <h3 class="eve-name" style=" text-decoration: underline; text-decoration-color: red ; text-underline-offset: 2px;" >Event Name : Lorem ipsum dolor sit neque pariatur.</h3>
+            <div class="swiper mySwiper" data-swiper-autoplay="2000">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">  <img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image">  </div>
+                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
+                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
+                  <div class="swiper-slide"><img src={% static '/images/Team_2021-2022/amrita.png' %} alt="Team Image"> </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+
+        
+
+       
+
+    </section> <!-- end s-hero -->
+
+    <div class="container">
+      
+        <div id="content1">
+<div>
+    <p class="info1">Date</p>
+    <p class="info">24th December 2021</p>
+</div>
+        </div>
+        <div id="content2">
+            <div>
+                <p class="info1">Conducted By</p>
+                <p class="info">CSI SFIT</p>
+            </div>
+        </div>
+        <div id="content3">
+            <div>
+                <p class="info1">Venue</p>
+                <p class="info">Google Meet</p>
+            </div>
+        </div>
+       
+      </div>
+    
+    <div class="desc_p">
+        <h2 class="new ">Description</h2>
+        
+        <p class="des-para" >Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
+            teur Lorem exercitation eiusmod pariatur.
+        
+            Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
+            teur Lorem exercitation eiusmod pariatur.
+        
+        </p>
+    
+        <p class="des-para" style="padding-top: 0px;">Laboris elit ea occaecat eu anim nulla nisi aliqua labore enim. Cillum occaecat quis labore aliquip aute aliquip minim ut anim occaecat velit labore Lorem culpa. Magna occaecat pariatur nostrud ullamco elit. Eu minim anim consequat officia labore mollit labore Lorem veniam excep
+            teur Lorem exercitation eiusmod pariatur.
+        
+            
+        </p>
+     </div>
+
+
+ 
+
+
+    <section>
+
+        
+        <!-- Swiper -->
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row row-y-top">
+
+            <div class="column large-8 medium-12">
+                <div class="row">
+                    <div class="column large-10 tab-12 s-footer__block">
+                        <h4 class="h6">Where to Find Us</h4>
+        
+                        <p>
+                       <i class="fas icon fa-university hvr-underline-reveal"></i>  ST.Francis institute of technology  <br>
+                       <i class="fas icon fa-map-marked-alt"></i>   Mount Poinsur, S.V.P. Road, Borivali (West), Mumbai 400 103 <br>
+                       <i class="fas icon fa-envelope"></i>   sfedu@sfit.ac.in<br>
+                       <i class="fas icon fa-phone-volume"> </i>  022-28954787
+                    
+                        </p>
+                    </div>
+        
+                    <div class="column large-5 tab-12 s-footer__block">
+                        <h4 class="h6">Follow Us</h4 class="h6">
+        
+                        <ul class="social-i">
+                            <a href="https://github.com/CSI-SFIT"><i class="fab links fa-github fa-2x"></i></a>
+                            <a href="https://www.instagram.com/csi_sfit/"><i class="fab links fa-instagram fa-2x"></i></a>
+                           <a href="https://www.linkedin.com/company/csi-sfit/mycompany/"> <i class="fab links fa-linkedin fa-2x"></i></a>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-4 medium-12 s-footer__block--end">
+                <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
+
+                <div class="ss-copyright">
+                    <span>Copyright Flare 2020</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                </div>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div> <!-- end ss-go-top -->
+
+        </div>
+    </footer>
+    
+
+    
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+    strings: [' makeIThappen ', ' makeIThappen ','makeIThappen'],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true,
+  });
+  
+
+    </script>
+   <script src="{%static 'js/jquery-3.2.1.min.js'%}"></script>
+   <script src="{%static 'js/plugins.js'%}"></script>
+   <script src="{%static 'js/main.js'%}"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+
+</body>
+
+</html>

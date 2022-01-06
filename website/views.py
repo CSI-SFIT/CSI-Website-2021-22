@@ -23,6 +23,9 @@ def teams19(request):
 def teams21(request):
     return render(request,"teams21.html")
 
+def events_single(request):
+    return render(request,"events_single.html")
+
 def events(request):
     return render(request, "events.html", {"events": Event.objects.all(), "previousEvents": PreviousEvent.objects.all().order_by('-createdTime')})
 
