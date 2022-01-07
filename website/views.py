@@ -7,7 +7,6 @@ from .models import Event, PreviousEvent
 def home(request):
     return render(request,'index.html')
 
-
 def aboutus(request):
     return render(request,"aboutus.html")
 
@@ -26,10 +25,8 @@ def teams21(request):
 def events(request):
     return render(request, "events.html", {"events": Event.objects.all(), "previousEvents": PreviousEvent.objects.all().order_by('-createdTime')})
 
-
 def event_pages(request, event_url):
     return render(request, "events_single.html", {"event": Event.objects.get(url=event_url)})
-
 
 def previous_event_pages(request, previous_event_url):
     return render(request, "previous_events_single.html", {"previousEvent": PreviousEvent.objects.get(url=previous_event_url)})
