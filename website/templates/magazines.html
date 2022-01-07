@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static "\css\events.css"%}">
+	<style>
+		.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 15px;
+  flex: 30%;
+}
+
+.flex-item-centre {
+  background-color: #f1f1f1;
+  padding: 10px;
+
+  margin: 15px;
+  flex: 30%;
+}
+
+.flex-item-right {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 15px;
+  flex: 30%;
+}
+
+.abcd {
+width: 100%;
+height: auto;
+
+
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+	</style>
+</head>
+<!-- hero
+    ================================================== -->
+
+
+
+
+<!-- hero
+    ================================================== -->
+
+
+
+<section id="posts" style="margin-top: 100px;">
+	<div class="flex-container">
+		<div class="flex-item-left">
+			<a href="/posts/">
+				<img src={%static "/images/magazines/Paradigm_2018.jpg"%} alt="Team Image">
+			</a>
+		</div>
+
+		<div class="flex-item-centre">
+			<Link target="_blank" to="/magazines/2">
+				<img src={%static "/images/magazines/Paradigm_2019.jpg"%} alt="Team Image">
+			</Link>
+		</div>
+
+		<div class="flex-item-right">
+			<Link target="_blank" to="/magazines/3">
+				<img src={%static "/images/magazines/Paradigm_2018.jpg"%} alt="Team Image">
+			</Link>
+		</div>
+	</div>
+</section>
+
+<!-- Java Script
+    ================================================== -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+{% endblock content %}
+{% block footend %}
+
+{% endblock footend %}
+</body>
+
+</html>

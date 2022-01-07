@@ -33,3 +33,6 @@ def previous_event_pages(request, previous_event_url):
 
 def csi_show(request):
     return render(request, "csi_show.html")
+
+def magazines(request):
+    return render(request, "magazines.html")

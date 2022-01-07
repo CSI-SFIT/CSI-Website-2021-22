@@ -11,6 +11,7 @@ urlpatterns = [
   path("teams21/",views.teams21,name="teams21"),
   path("events/", views.events, name="events"),
   path("csi_show/", views.csi_show, name="csi_show"),
+  path("magazines/", views.magazines, name="magazines"),
   path("e/<str:event_url>/", views.event_pages, name="event"),
   path("pe/<str:previous_event_url>/",
        views.previous_event_pages, name="previous_event"),
