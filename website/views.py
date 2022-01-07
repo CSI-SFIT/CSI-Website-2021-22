@@ -30,3 +30,6 @@ def event_pages(request, event_url):
 
 def previous_event_pages(request, previous_event_url):
     return render(request, "previous_events_single.html", {"previousEvent": PreviousEvent.objects.get(url=previous_event_url)})
+
+def csi_show(request):
+    return render(request, "csi_show.html")

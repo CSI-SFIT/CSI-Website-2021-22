@@ -3473,6 +3473,14 @@ img {
 .mid-text{
     text-align: center
 }
+.mid-text::after {
+  content: "";
+  border-bottom: 4px solid #d9083c;
+  width: 10rem;
+  display: block;
+  margin: 2px auto;
+}
+
 /**********************************/
 /***** Layout & Section Title *****/
 /**********************************/
