@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+handler404 = 'website.views.handler404'
+
 urlpatterns = [
   path("",views.home,name="home"),
   path("aboutus/",views.aboutus,name="aboutus"),
@@ -11,6 +13,7 @@ urlpatterns = [
   path("teams21/",views.teams21,name="teams21"),
   path("events/", views.events, name="events"),
   path("csi_show/", views.csi_show, name="csi_show"),
+  path("magazines/<int:year>/", views.magazines_single, name="magazines_single"),
   path("magazines/", views.magazines, name="magazines"),
   path("e/<str:event_url>/", views.event_pages, name="event"),
   path("pe/<str:previous_event_url>/",

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static "\css\404.css"%}">
+	<link rel="stylesheet" href="{% static "\css\styles.css"%}">
+	<style>
+		.mid-text {
+			text-align: center;
+		}
+
+		.mid-text::after {
+			content: "";
+			border-bottom: 4px solid #d9083c;
+			width: 10rem;
+			display: block;
+			margin: 2px auto;
+		}
+	</style>
+</head>
+
+<body>
+	{%if year == 2020 %}
+	<iframe style='width:1920px;height:1000px;padding-top:120px;' src='https://online.pubhtml5.com/tqct/oylu/' seamless='seamless' scrolling='no'
+		frameborder='0' allowtransparency='true' allowfullscreen='true'></iframe>
+	{%elif year == 2019 %}
+	<iframe style='width:1920px;height:1000px;padding-top:120px;' src='https://online.pubhtml5.com/tqct/hhgz/' seamless='seamless' scrolling='no'
+		frameborder='0' allowtransparency='true' allowfullscreen='true'></iframe>
+	{%elif year == 2018 %}
+	<iframe style='width:1920px;height:1000px;padding-top:120px;' src='https://online.pubhtml5.com/tqct/tyiv/' seamless='seamless' scrolling='no'
+		frameborder='0' allowtransparency='true' allowfullscreen='true'></iframe>
+	{%endif%}
+</body>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+{% endblock content %}
+{% block footend %}
+
+{% endblock footend %}
+</body>
+
+</html>
