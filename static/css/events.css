@@ -1595,6 +1595,13 @@ h2, .h2, h3, .h3, h4, .h4 {
 .pre{
     margin-bottom:50px;
 }
+.pre::after {
+  content: "";
+  border-bottom: 4px solid #d9083c;
+  width: 10rem;
+  display: block;
+  margin: 2px auto;
+}
 h5, .h5, h6, .h6 {
     margin-top: var(--vspace-1_5);
     margin-bottom: var(--vspace-0_5);
