@@ -5303,7 +5303,12 @@ html.no-csstransitions .s-hero__content {
    }
     }
   
-  
+    @media screen and (max-width: 400px){
+        .s-hero__content h1 {
+            font-size: 90px;
+        }
+        
+    }
   
   
   

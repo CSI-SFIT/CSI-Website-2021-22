@@ -3454,33 +3454,7 @@ padding-top:200px;
 padding-left:30px;
 margin-left: 177px;
 }
-@media screen and (max-width: 400px) {
-    .nteam {
-        font-size: 10rem;
-        padding-top: 30%;
-        padding-left: 10px;
-      }
-    .team-p{
-        display: none;
-    }
-    .cor{
-      position: relative;
-      bottom: 200px;
-      background-color: black;
-    }
-    .dropbtn{
-      position: relative;
-      right: 20px;
-      bottom:20px;
-    }
-    .mid-text{
-      padding-top:10px;
-    }
-    .core{
-      position: relative;
-      bottom:200px;
-    }
-}
+
 .finalcon{
     padding-left:10%;
 }
@@ -3806,3 +3780,39 @@ img {
     position: relative;
     bottom: 20px;
 }
+
+@media screen and (max-width: 400px) {
+    .nteam {
+      font-size: 10rem;
+      padding-top: 30%;
+      padding-left: 10px;
+      margin-left:0px;
+      line-height: 1;
+    }
+   
+    .team-p{
+      display: none;
+  }
+  .cor{
+    position: relative;
+    bottom: 200px;
+    background-color: black;
+  }
+  .dropbtn{
+    position: relative;
+    right: 20px;
+    bottom:20px;
+    margin-left:0px;
+  }
+  .dropdown-content{
+    margin-left: 0px;
+    left: 0px
+  }
+  .mid-text{
+    padding-top:10px;
+  }
+  .core{
+    position: relative;
+    bottom:200px;
+  }
+  }
