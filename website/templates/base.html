@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
+{% load static %}
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
     <title>CSI SFIT</title>
-    <link rel="icon" type="image/x-icon" href="..\static\images\favicon\Logo.png">
+    <link rel="icon" type="image/x-icon" href="{% static "images\favicon\Logo.png"%}">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,7 +17,6 @@
 
     <!-- CSS
     ================================================== -->
-{% load static %}
   
   
     <link rel="stylesheet" href="{% static "\css\styles.css"%}">
