@@ -5326,7 +5326,7 @@ html.no-csstransitions .s-hero__content {
     position: relative;
  padding: 40px;
       text-align: center;
-      padding-top: 110px;
+      padding-top: 50px;
       font-size: 3rem;
       color:red;
      
@@ -5336,7 +5336,7 @@ html.no-csstransitions .s-hero__content {
     font-weight: 900;
     color: white;
 }
-  
+
   @media screen  and (max-width: 480px) {
 
     .container{
@@ -5370,6 +5370,9 @@ font-size: 5rem;
     width:100%;
 }
   }
+
+
+
   .eve-name{
       text-align: center;
       font-family: 'Poppins', sans-serif;
@@ -5471,4 +5474,13 @@ font-size: 5rem;
 .swiper-button-prev{
     font-weight: 900;
     color: white;
+}
+@media screen  and (max-width: 400px) {
+    .container{
+        margin-top: 190px;
+
+    }
+    .des-para{
+        margin-top: 275px;
+    }
 }
