@@ -1,1 +1,1 @@
-web: gunicorn SocialMediaSite.wsgi
+web: gunicorn CSI-SFIT-Website-21-22.wsgi
