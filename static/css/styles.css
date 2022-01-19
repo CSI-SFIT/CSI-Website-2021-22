@@ -2876,10 +2876,13 @@ input::-moz-focus-inner {
 .display-1 {
     font-size: var(--text-xxl);
     font-weight: 500;
-    line-height: var(--vspace-1_75);
+    line-height: normal;
     margin-top: 0;
+    text-align: center;
 }
-
+.s-porfolio__top1{
+    margin-left: 170px;
+}
 .item-title {
     font-family: var(--font-2);
     font-weight: 500;
@@ -2998,6 +3001,12 @@ input::-moz-focus-inner {
     }
     .item-list .item {
         padding-right: 0;
+    }
+    .vision {
+        padding-left: 0px;
+        /* margin-left: 100px; */
+        border-radius: 40%;
+        width: 100%;
     }
 }
 
@@ -3951,6 +3960,7 @@ html.no-csstransitions .s-hero__content {
         font-size:35px;
         font-weight: 0;
         margin-top: 20px;
+        width: 300px;
     }
 }
 
@@ -4227,7 +4237,13 @@ html.no-csstransitions .s-hero__content {
     }
 }
 
-
+.vi::after {
+    content: "";
+    border-bottom: 4px solid #d9083c;
+    width: 10rem;
+    display: block;
+    margin: 2px auto;
+}
 
 /* ===================================================================
  * # portfolio
@@ -4235,10 +4251,34 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-portfolio {
     background-color: var(--color-bg);
-    padding-top: calc(7 * var(--space));
+    padding-top: 60px;
     padding-bottom: 0;
 }
-
+.vision{
+        padding-left: 0px;
+        margin-left: 100px;
+        border-radius: 40%;
+        width:60%;
+}
+@media screen and (max-width: 400px) {
+    .display-1 {
+        font-size: var(--text-xl);
+        line-height: var(--vspace-1_5);
+    }
+    .item-title {
+        font-size: var(--text-md);
+        line-height: var(--vspace-1);
+    }
+    .item-list .item {
+        padding-right: 0;
+    }
+    .vision {
+        padding-left: 0px;
+         margin-left: 0px; 
+        border-radius: 40%;
+        width: 100%;
+    }
+}
 
 /* ------------------------------------------------------------------- 
  * ## portfolio list

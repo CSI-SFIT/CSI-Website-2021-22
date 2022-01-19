@@ -2899,6 +2899,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
+  background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2907,6 +2908,19 @@ input::-moz-focus-inner {
   right: 0;
   bottom: 0;
   left: 36.5vw;
+}
+@media screen and (max-width: 600px) {
+  .s-hero__bg {
+      background-image: url(../images/hero-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 36.5vw;
+  }
 }
 
 .s-hero__bg::after {
@@ -2918,7 +2932,7 @@ input::-moz-focus-inner {
   width: 100%;
   height: 100%;
   background: var(--color-black);
-  opacity: 0.25;
+  opacity: .25;
 }
 
 .s-hero__bg .gradient-overlay {
@@ -2928,15 +2942,9 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(10%, black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.35;
+  opacity: .35;
 }
 
 /* ------------------------------------------------------------------- 

@@ -25,7 +25,7 @@ CSI_MONGO_USR = os.environ.get("CSI_MONGO_USR") or ""
 CSI_MONGO_PASS = os.environ.get("CSI_MONGO_PASS") or ""
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'csisfit.herokuapp.com']
 
