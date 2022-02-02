@@ -23,7 +23,7 @@ def teams21(request):
     return render(request,"teams21.html")
 
 def events(request):
-    return render(request, "events.html", {"events": Event.objects.all(), "previousEvents": PreviousEvent.objects.all().order_by('-createdTime')})
+    return render(request, "events.html", {"events": Event.objects.all().order_by('-date'), "previousEvents": PreviousEvent.objects.all().order_by('-date')})
 
 def event_pages(request, event_url):
     if Event.objects.filter(url=event_url).exists():
