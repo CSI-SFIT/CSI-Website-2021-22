@@ -47,7 +47,7 @@ def handler404(request,exception):
     return render(request, "404.html", status=404)
 
 def magazines_single(request,year):
-    if year not in [2018,2019,2020]:
+    if year not in [2018,2019,2020,2021]:
         raise Http404("Wrong Year for Magazine")
     else:
         return render(request, "magazine_single.html",{"year":year})
