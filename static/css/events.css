@@ -3489,7 +3489,7 @@ input::-moz-focus-inner {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 36.5vw;
+    left: 0;
 }
 @media screen and (max-width: 600px) {
     .s-hero__bg {
@@ -3501,7 +3501,7 @@ input::-moz-focus-inner {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 36.5vw;
+        left: 0;
     }
 }
 
@@ -3904,12 +3904,12 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 900px) {
     .s-hero__bg {
         display: block;
-        width: 50vw;
+        width: auto;
         height: 50vh;
         top: 12rem;
         right: 0;
         bottom: auto;
-        left: auto;
+        left: 0;
     }
     .s-hero__content {
         max-width: 600px;

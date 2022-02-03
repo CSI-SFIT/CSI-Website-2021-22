@@ -2907,7 +2907,7 @@ input::-moz-focus-inner {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 36.5vw;
+  left: 0;
 }
 @media screen and (max-width: 600px) {
   .s-hero__bg {
@@ -3463,6 +3463,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .nteam {
+  position: relative;
   color: #d9083c;
   font-size: 18rem;
   padding-top: 200px;
@@ -3829,4 +3830,24 @@ img {
   position: relative;
   bottom:200px;
 }
+}
+@media screen and (max-width: 900px) {
+  .s-hero__bg {
+      display: block;
+      width: auto;
+      height: 50vh;
+      top: 12rem;
+      right: 0;
+      bottom: auto;
+      left: 0;
+  }
+  .s-hero__content {
+      max-width: 600px;
+  }
+  .s-hero__video {
+      right: calc(100% - 54vw);
+  }
+  .s-hero__scroll-link {
+      color: var(--color-text);
+  }
 }
