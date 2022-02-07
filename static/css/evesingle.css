@@ -5282,7 +5282,6 @@ html.no-csstransitions .s-hero__content {
         height: 90%;
         position: relative;
         top:125px;
-        border-radius: 30%;
       }
 
       .swiper-slide {
@@ -5322,13 +5321,13 @@ html.no-csstransitions .s-hero__content {
     }
 
   .des-para{
-  
+    white-space:pre-line;
     position: relative;
  padding: 40px;
-      text-align: center;
+      text-align: left;
       padding-top: 50px;
       font-size: 3rem;
-      color:red;
+      color:white;
      
      font-family: 'Poppins', sans-serif;
   }
@@ -5471,4 +5470,9 @@ font-size: 5rem;
 .swiper-button-prev{
     font-weight: 900;
     color: white;
+}
+@media only screen and (max-width: 600px) {
+#carouselExampleDark{
+    margin-top:35%;
+}
 }
