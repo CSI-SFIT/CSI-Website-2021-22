@@ -103,15 +103,17 @@
   }
   
   .timeline-img-header {
-    height: 200px;
+    height: auto;
     position: relative;
     margin-bottom: 20px;
   }
   .timeline-img-header h2 {
-    color: #FFFFFF;
+    color: hsla(345, 93%, 44%, 1);
     position: absolute;
     bottom: 5px;
     left: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0000, 0 0 5px #0000ff;
   }
   
   blockquote {
