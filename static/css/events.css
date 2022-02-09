@@ -4919,7 +4919,9 @@ html.no-csstransitions .s-hero__content {
     background-color: var(--color-gray-19) !important;
     -webkit-transition: all .3s;
     transition: all .3s;
-    position: relative;
+    position: absolute;
+    bottom:0px;
+    right:0px;
 }
 
 .ss-go-top.link-is-visible {

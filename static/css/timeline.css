@@ -99,13 +99,9 @@ color:#ffffff
     display: flex;
     align-items: center;
     justify-content: center;
-    color: hsl(345deg 93% 44%);
     padding: 20px;
     align-self: center;
     margin: 0 20px;
-    background: hsl(345deg 93% 44%);
-    border-radius: 100%;
-    width: -1px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     padding: 40px;
     height: 40px;
@@ -174,8 +170,8 @@ color:#ffffff
     background: #aff1b6;
   }
   .timeline__event--type3 .timeline__event__icon {
-    background: hsl(345deg 93% 44%);
-    color: #24b47e;
+    /* background: hsl(345deg 93% 44%);
+    color: #24b47e; */
   }
   .timeline__event--type3 .timeline__event__icon:before, .timeline__event--type3 .timeline__event__icon:after {
     background: #aff1b6;
