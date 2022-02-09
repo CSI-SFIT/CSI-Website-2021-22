@@ -3464,6 +3464,8 @@ input::-moz-focus-inner {
     right: 0;
     bottom: 0;
     left: 36.5vw;
+    background-repeat: repeat-x;
+    background-position-x: calc(100%);
 }
 @media screen and (max-width: 600px) {
     .s-hero__bg {
@@ -3476,6 +3478,8 @@ input::-moz-focus-inner {
         right: 0;
         bottom: 0;
         left: 36.5vw;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
 }
 
@@ -3885,6 +3889,8 @@ html.no-csstransitions .s-hero__content {
         right: 0;
         bottom: auto;
         left: auto;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
     .s-hero__content {
         max-width: 600px;
@@ -5328,7 +5334,7 @@ html.no-csstransitions .s-hero__content {
       padding-top: 50px;
       font-size: 3rem;
       color:white;
-     
+    padding-top:0px;
      font-family: 'Poppins', sans-serif;
   }
   .swiper-button-next{
@@ -5373,7 +5379,7 @@ font-size: 5rem;
       text-align: center;
       font-family: 'Poppins', sans-serif;
       position: relative;
-      top:100px;
+      top:9vh;
   }
 
   #content1 {
@@ -5396,6 +5402,7 @@ font-size: 5rem;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
+  
   :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -5407,9 +5414,9 @@ font-size: 5rem;
   
   .container {
     display: grid;
-    height: 100vh;
+    height: 75vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.7fr 0.7fr 0.8fr;
     grid-template-areas:
       "nav nav nav nav"
       "sidebar main main main"
@@ -5450,17 +5457,45 @@ font-size: 5rem;
   
   @media only screen and (max-width: 550px) {
     .container {
+      height:85vh;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-rows: 0.4fr 0.4fr 0.7fr 0.9fr 0.9fr 0.9fr 0.3fr;
       grid-template-areas:
-        "nav"
-        "sidebar"
-        "main"
-        "content1"
-        "content2"
-        "content3"
-        "footer";
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
     }
+    #content1 {
+    
+        /* grid-area: content1; */
+        grid-row:4/5;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+      
+      #content1+#content2 {
+        grid-row:5/6;
+        
+        /* grid-area: content2; */
+    
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+      #content1+#content3{
+          grid-row:5/7;
+        height:50%;
+      }
+      #content1+#content2+#content3 {
+      
+        /* grid-area: content3; */
+        grid-row:6/7;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
   }
   
   .desc_p{
@@ -5470,9 +5505,4 @@ font-size: 5rem;
 .swiper-button-prev{
     font-weight: 900;
     color: white;
-}
-@media only screen and (max-width: 600px) {
-#carouselExampleDark{
-    margin-top:35%;
-}
 }

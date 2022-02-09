@@ -2900,26 +2900,28 @@ input::-moz-focus-inner {
 
 .s-hero__bg {
   background-image: url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0;background-repeat: repeat-x;
+  background-position-x: calc(100%);
 }
 @media screen and (max-width: 600px) {
   .s-hero__bg {
       background-image: url(../images/hero-bg.jpg);
-      background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      height:87vh;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 36.5vw;
+      background-repeat: repeat-x;
+      background-position-x: calc(5%);
   }
 }
 
@@ -3835,11 +3837,13 @@ img {
   .s-hero__bg {
       display: block;
       width: auto;
-      height: 50vh;
+      height: 87vh;
       top: 12rem;
       right: 0;
       bottom: auto;
       left: 0;
+      background-repeat: repeat-x;
+      background-position-x: calc(5%);
   }
   .s-hero__content {
       max-width: 600px;
@@ -3849,5 +3853,29 @@ img {
   }
   .s-hero__scroll-link {
       color: var(--color-text);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nteam{
+      margin-left:5px;
+      font-size:100px;
+  }
+  .dropbtn,.dropdown-content{
+    position: relative;
+    left: 25%;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .nteam{
+    margin-bottom:0;
+    margin-left:5px;
+    font-size:75px;
+}
+  .dropbtn,.dropdown-content{
+    margin-bottom:0;
+    position: relative;
+    left: calc(5%);
+    margin-left: 5px;
   }
 }

@@ -3443,7 +3443,6 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -3451,6 +3450,8 @@ input::-moz-focus-inner {
     right: 0;
     bottom: 0;
     left: 36.5vw;
+    background-repeat: repeat-x;
+    background-position-x: calc(-5%);
 }
 
 .s-hero__bg::after {
@@ -3861,6 +3862,8 @@ html.no-csstransitions .s-hero__content {
         right: 0;
         bottom: auto;
         left: auto;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
     .s-hero__content {
         max-width: 600px;

@@ -3490,6 +3490,8 @@ input::-moz-focus-inner {
     right: 0;
     bottom: 0;
     left: 0;
+    background-repeat: repeat-x;
+    background-position-x: calc(100%);
 }
 @media screen and (max-width: 600px) {
     .s-hero__bg {
@@ -3502,6 +3504,8 @@ input::-moz-focus-inner {
         right: 0;
         bottom: 0;
         left: 0;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
 }
 
@@ -3905,11 +3909,13 @@ html.no-csstransitions .s-hero__content {
     .s-hero__bg {
         display: block;
         width: auto;
-        height: 50vh;
+        height: 87vh;
         top: 12rem;
         right: 0;
         bottom: auto;
         left: 0;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
     .s-hero__content {
         max-width: 600px;
