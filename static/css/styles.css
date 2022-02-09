@@ -669,7 +669,7 @@ textarea {
 
 /* rows
  * ------------------------------------- */
-.row {
+ .row {
     width: 92%;
     max-width: var(--width-grid-max);
     margin: 0 auto;
@@ -680,6 +680,9 @@ textarea {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
+}
+.row.s-hero__content{
+    margin: 0 calc(7%);
 }
 
 .row .row {
@@ -4969,6 +4972,9 @@ html.no-csstransitions .s-hero__content {
     .s-footer>.row {
         max-width: 1100px;
     }
+    #journey{
+        font-size:17rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -4980,6 +4986,9 @@ html.no-csstransitions .s-hero__content {
     }
     .s-footer__block--end::before {
         display: none;
+    }
+    #journey{
+        font-size:16rem;
     }
 }
 
@@ -4993,6 +5002,9 @@ html.no-csstransitions .s-hero__content {
         width: 6rem;
         line-height: 6rem;
     }
+    #journey{
+        font-size:15rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -5005,6 +5017,9 @@ html.no-csstransitions .s-hero__content {
     }
     .ss-copyright span::after {
         display: none;
+    }
+    #journey{
+        font-size:9rem;
     }
 }
 
@@ -5021,6 +5036,9 @@ html.no-csstransitions .s-hero__content {
     }
     .ss-copyright {
         font-size: 1.4rem;
+    }
+    #journey{
+        font-size:7rem;
     }
 }
 

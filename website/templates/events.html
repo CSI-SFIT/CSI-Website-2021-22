@@ -97,9 +97,10 @@
                   {%empty%}
                   <img class="timeline-img-header" width="500px" src="/static/website/images/black.jpg" alt="Image Title" />
                   {%endfor%}
-                    <h2>{{previousEvent.title}}</h2>
                   </div>
-                  <div class="date">{{ previousEvent.date|date:"d M Y" }}, {{ previousEvent.date|time:"h:i A" }}</div>
+                  <div class="date">
+                      {{ previousEvent.date|date:"d M Y" }}, {{ previousEvent.date|time:"h:i A" }}</div>
+                    <h2>{{previousEvent.title}}</h2>
                   <p>{{previousEvent.content|truncatechars:210}}</p>
                   <a class="bnt-more" href="/pe/{{previousEvent.url}}"">More</a>
                 </div>

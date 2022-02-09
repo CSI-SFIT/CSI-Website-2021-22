@@ -100,20 +100,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 260px;
+    width:500px;
   }
   
   .timeline-img-header {
     height: auto;
     position: relative;
-    margin-bottom: 20px;
   }
-  .timeline-img-header h2 {
-    color: hsla(345, 93%, 44%, 1);
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
+  .timeline-content h2 {
+    font-size:35px;
+    color: black;
     font-weight: bold;
-    text-shadow: 0 0 5px #ff0000, 0 0 5px #0000ff;
+    width:100%;
+    margin:0;
+    padding-top:10px;
   }
   
   blockquote {

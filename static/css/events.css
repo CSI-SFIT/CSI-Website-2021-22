@@ -685,6 +685,9 @@ textarea {
     -webkit-box-direction: normal;
     flex-flow: row wrap;
 }
+.row.s-hero__content{
+    margin: 0 calc(7%);
+}
 
 .row .row {
     width: auto;

@@ -4899,7 +4899,9 @@ html.no-csstransitions .s-hero__content {
     background-color: var(--color-gray-19) !important;
     -webkit-transition: all .3s;
     transition: all .3s;
-    position: relative;
+    position: absolute;
+    bottom:0px;
+    right:0px;
 }
 
 .ss-go-top.link-is-visible {
@@ -5332,7 +5334,7 @@ html.no-csstransitions .s-hero__content {
  padding: 40px;
       text-align: left;
       padding-top: 50px;
-      font-size: 3rem;
+      font-size: 2.5rem;
       color:white;
     padding-top:0px;
      font-family: 'Poppins', sans-serif;
@@ -5376,10 +5378,16 @@ font-size: 5rem;
 }
   }
   .eve-name{
+    font-size: 6rem;
+    background-image: linear-gradient(180deg, hsla(345, 93%, 44%, 1), white);
       text-align: center;
       font-family: 'Poppins', sans-serif;
       position: relative;
       top:9vh;
+-webkit-background-clip: text;
+color: transparent;
+padding: 20px;
+margin: 2% auto auto 0;
   }
 
   #content1 {
@@ -5499,6 +5507,8 @@ font-size: 5rem;
   }
   
   .desc_p{
+    width: 75%;
+    margin: auto;
     position: relative;
     bottom:450px;
 }

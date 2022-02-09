@@ -4401,6 +4401,9 @@ html.no-csstransitions .s-hero__content {
     .s-footer, .s-contact {
         font-size:5px;
     }
+    #journey{
+        font-size:5px;
+    }
 }
 
 @media screen and (max-width: 400px) {
