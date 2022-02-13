@@ -3722,7 +3722,7 @@ img {
 }
 
 .comt {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--color-text-dark);
@@ -3732,7 +3732,7 @@ img {
   font-size: 2.3rem;
 }
 .comt1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--color-text-dark);

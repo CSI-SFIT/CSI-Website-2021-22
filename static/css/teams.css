@@ -984,7 +984,7 @@ a:hover, a:active {
     --text-xs        = (12.50px)
  * -------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--color-text-dark);
@@ -3484,6 +3484,7 @@ font-family: 'Montserrat', sans-serif;
     }
     .mid-text{
       padding-top:10px;
+      font-family: 'Encode Sans', sans-serif;
     }
     .core{
       position: relative;
@@ -3738,7 +3739,7 @@ img {
 }
 
 .comt{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--color-text-dark);
@@ -3748,7 +3749,7 @@ img {
     font-size: 2.3rem;
 }
 .comt1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--color-text-dark);
@@ -3774,7 +3775,7 @@ img {
     position: relative;
     display: inline-block;
     top: 15%;
-    left: 30px;
+    left: -11px;
   }
   
   .dropdown-content {
@@ -3890,7 +3891,7 @@ img {
 @media screen and (max-width: 545px) {
     .nteam{
       margin-left:5px;
-      font-size:75px;
+      font-size:90px;
   }
     .dropbtn,.dropdown-content{
         margin-bottom:0;
@@ -3995,4 +3996,7 @@ img {
     -webkit-box-flex: 0;
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
+}
+.mid-text{
+    font-family: 'Encode Sans', sans-serif;
 }

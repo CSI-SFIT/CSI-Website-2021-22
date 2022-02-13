@@ -5337,7 +5337,7 @@ html.no-csstransitions .s-hero__content {
       font-size: 2.5rem;
       color:white;
     padding-top:0px;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
   }
   .swiper-button-next{
     font-weight: 900;
@@ -5388,6 +5388,8 @@ font-size: 5rem;
 color: transparent;
 padding: 20px;
 margin: 2% auto auto 0;
+font-family: 'Encode Sans', sans-serif;
+margin-top: 84px;
   }
 
   #content1 {
@@ -5449,13 +5451,13 @@ margin: 2% auto auto 0;
   }
  .info{
      margin-bottom: 10px;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Encode Sans', sans-serif;
      font-size:20px;
  }
   
  .info1{
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size:20px;
     opacity:0.45;
 }

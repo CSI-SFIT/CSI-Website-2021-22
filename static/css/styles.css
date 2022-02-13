@@ -1572,7 +1572,7 @@ a:hover, a:active {
     --text-xs        = (12.50px)
  * -------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-2);
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--color-text-dark);
@@ -3953,6 +3953,8 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
         font-size: 100px;
+        position: relative;
+        bottom:50px;
     }
     .s-hero__content-about {
         padding-right: 15vw;
@@ -3971,6 +3973,8 @@ html.no-csstransitions .s-hero__content {
         font-weight: 0;
         margin-top: 20px;
         width: 300px;
+        position: relative;
+        bottom: 35px;
     }
 }
 
@@ -5038,7 +5042,9 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     }
     #journey{
-        font-size:7rem;
+        font-size:5rem;
+        position: relative;
+        bottom: 160px;
     }
 }
 

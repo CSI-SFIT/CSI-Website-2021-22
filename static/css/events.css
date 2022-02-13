@@ -1598,6 +1598,7 @@ h2, .h2, h3, .h3, h4, .h4 {
 .pre{
     margin-bottom:50px;
     margin-top:20px;
+    font-family: 'Encode Sans', sans-serif;
 }
 .pre::after {
   content: "";
@@ -5024,6 +5025,7 @@ html.no-csstransitions .s-hero__content {
     overflow: hidden;
     position: relative;
     color: #ffffff;
+    font-family: 'Encode Sans', sans-serif;
   }
   .postcard.dark {
     background-color: #18151f;
@@ -5047,6 +5049,7 @@ html.no-csstransitions .s-hero__content {
   }
   .postcard .postcard__title {
     font-size: 1.75rem;
+    font-family: 'Encode Sans', sans-serif;
   }
   .postcard .postcard__img {
     max-height: 180px;
@@ -5318,7 +5321,9 @@ html.no-csstransitions .s-hero__content {
   
     @media screen and (max-width: 400px){
         .s-hero__content h1 {
-            font-size: 90px;
+            font-size:8rem;
+            position: relative;
+            bottom: 120px;
         }
         
     }
