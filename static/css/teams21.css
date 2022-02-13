@@ -3303,8 +3303,8 @@ html.no-csstransitions .s-hero__content {
   list-style: none;
   margin-left: 0;
 }
-.fa-github {
-  margin-right: 10px;
+a.social-li+svg.fa-github{
+  margin: auto;
 }
 .fa-instagram {
   margin-right: 10px;
@@ -3648,13 +3648,22 @@ img {
 .team-3 .team-social a.social-tw {
   background: #00acee;
 }
+a.social-tw+svg.fa-twitter{
+  margin: auto;
+}
 
 .team-3 .team-social a.social-fb {
   background: #3b5998;
 }
+a.social-fb+svg.fa-facebook{
+  margin: auto;
+}
 
 .team-3 .team-social a.social-li {
   background: #0e76a8;
+}
+a.social-li+svg.fa-linkedin{
+  margin: auto;
 }
 
 .team-3 .team-social a.social-in {
@@ -3663,6 +3672,9 @@ img {
 
 .team-3 .team-social a.social-yt {
   background: #c4302b;
+}
+a.social-yt+svg.fa-youtube{
+  margin: auto;
 }
 
 .team-3 .team-social a:last-child {
