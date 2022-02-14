@@ -57,7 +57,7 @@
 
 <body id="top">
     <div>
-        <h3 class="eve-name">
+        <h3 class="eve-name" data-aos="fade-up" data-aos-offset="300">
             {{previousEvent.title}}</h3>
         {%if previousEvent.images.all%}
         <!-- <div class="swiper mySwiper" data-swiper-autoplay="2000">
@@ -69,7 +69,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div> -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width:70%;margin-right: auto;margin-left: auto;top:6em;">
+        <div id="carouselExampleDark" data-aos="fade-up" data-aos-offset="300" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width:70%;margin-right: auto;margin-left: auto;top:6em;">
             <div class="carousel-inner">
               {% for image in previousEvent.images.all %}
                     <div class="carousel-item {% if forloop.first %} active {% endif %}">
@@ -90,7 +90,7 @@
     </div>
     <div class="container" style="margin-top:100px">
       
-        <div id="content1">
+        <div id="content1" data-aos="fade-up" data-aos-offset="300">
 <div>
     <p class="info1">Date And Time</p>
     <p class="info"><time datetime="2020-05-25 12:00:00">
@@ -98,7 +98,7 @@
     </time></p>
 </div>
         </div>
-        <div id="content3">
+        <div id="content3" data-aos="fade-up" data-aos-offset="300">
             <div>
                 <p class="info1">Conducted By</p>
                 <p class="info">CSI SFIT</p>
@@ -106,7 +106,7 @@
         </div>
       </div>
     
-    <div class="desc_p" style="margin-top:100px" >
+    <div class="desc_p" style="margin-top:100px" data-aos="fade-up" data-aos-offset="300">
         <p class="des-para" >{{previousEvent.content}}
         </p>
      </div>
