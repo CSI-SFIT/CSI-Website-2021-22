@@ -42,10 +42,10 @@
         {%if events%}
         <section class="dark" style="padding-top:60px" >
             <div class="container py-4 ">
-                <h2 class="pre">Current Events</h2>
+                <h2 class="pre" data-aos="fade-up">Current Events</h2>
                 {% for event in events %}
                 <article class="postcard dark red" style="
-                margin-top: 80px;">
+                margin-top: 80px;" data-aos="fade-left" data-aos-offset="300">
                     {%if event.images.all %}
                     <a class="postcard__img_link" href="/e/{{event.url}}">
                         <img class="postcard__img" src="{%for image in event.images.all%}{% if forloop.first %}{{image.image.url}}{%endif%}{%endfor%}" alt="Image Title" />
@@ -75,7 +75,7 @@
         </section>
         {%endif%}
 {%if previousEvents%}
-<h2 class="pre">Our Previous Events</h2>
+<h2 class="pre" data-aos="fade-up">Our Previous Events</h2>
 
 
         <section class="timeline">
@@ -85,7 +85,7 @@
           
                 <div class="timeline-img"></div>
                 <a href="/pe/{{previousEvent.url}}">
-                <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-content timeline-card js--fadeInRight" data-aos="fade-left">
                   <div class="timeline-img-header">
                   {%for image in previousEvent.images.all%}
                   {% if forloop.first %}
