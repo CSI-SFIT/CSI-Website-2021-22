@@ -5381,14 +5381,14 @@ font-size: 5rem;
     font-size: 6rem;
     background-image: linear-gradient(180deg, hsla(345, 93%, 44%, 1), white);
       text-align: center;
-      font-family: 'Poppins', sans-serif;
+  
       position: relative;
       top:9vh;
 -webkit-background-clip: text;
 color: transparent;
 padding: 20px;
 margin: 2% auto auto 0;
-font-family: 'Encode Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 margin-top: 84px;
   }
 
@@ -5494,6 +5494,8 @@ margin-top: 84px;
     
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
+        position: relative;
+        right:70px;
       }
       #content1+#content3{
           grid-row:5/7;
@@ -5505,14 +5507,15 @@ margin-top: 84px;
         grid-row:6/7;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
+      
       }
   }
   
   .desc_p{
-    width: 75%;
+    width: 80%;
     margin: auto;
     position: relative;
-    bottom:450px;
+    bottom:343px;
 }
 .swiper-button-prev{
     font-weight: 900;
