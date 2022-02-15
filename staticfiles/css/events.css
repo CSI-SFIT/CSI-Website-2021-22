@@ -673,9 +673,9 @@ textarea {
 
 /* rows
  * ------------------------------------- */
-.row {
+ .row {
     width: 92%;
-    max-width: var(--width-grid-max);
+    /* max-width: var(--width-grid-max); */
     margin: 0 auto;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -684,6 +684,9 @@ textarea {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
+}
+.row.s-hero__content{
+    margin: 0 calc(7%);
 }
 
 .row .row {
@@ -1594,6 +1597,8 @@ h2, .h2, h3, .h3, h4, .h4 {
 }
 .pre{
     margin-bottom:50px;
+    margin-top:20px;
+    font-family: 'Encode Sans', sans-serif;
 }
 .pre::after {
   content: "";
@@ -3489,7 +3494,9 @@ input::-moz-focus-inner {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 36.5vw;
+    left: 0;
+    background-repeat: repeat-x;
+    background-position-x: calc(100%);
 }
 @media screen and (max-width: 600px) {
     .s-hero__bg {
@@ -3501,7 +3508,9 @@ input::-moz-focus-inner {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 36.5vw;
+        left: 0;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
 }
 
@@ -3551,6 +3560,7 @@ input::-moz-focus-inner {
     color: var(--color-1);
     margin-bottom: 0;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .s-hero__content h1::before {
@@ -3904,12 +3914,14 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 900px) {
     .s-hero__bg {
         display: block;
-        width: 50vw;
-        height: 50vh;
+        width: auto;
+        height: 87vh;
         top: 12rem;
         right: 0;
         bottom: auto;
-        left: auto;
+        left: 0;
+        background-repeat: repeat-x;
+        background-position-x: calc(5%);
     }
     .s-hero__content {
         max-width: 600px;
@@ -4919,7 +4931,9 @@ html.no-csstransitions .s-hero__content {
     background-color: var(--color-gray-19) !important;
     -webkit-transition: all .3s;
     transition: all .3s;
-    position: relative;
+    position: absolute;
+    bottom:0px;
+    right:0px;
 }
 
 .ss-go-top.link-is-visible {
@@ -5011,6 +5025,7 @@ html.no-csstransitions .s-hero__content {
     overflow: hidden;
     position: relative;
     color: #ffffff;
+    font-family: 'Encode Sans', sans-serif;
   }
   .postcard.dark {
     background-color: #18151f;
@@ -5034,6 +5049,7 @@ html.no-csstransitions .s-hero__content {
   }
   .postcard .postcard__title {
     font-size: 1.75rem;
+    font-family: 'Encode Sans', sans-serif;
   }
   .postcard .postcard__img {
     max-height: 180px;
@@ -5117,7 +5133,7 @@ html.no-csstransitions .s-hero__content {
       justify-content: start;
     }
     .postcard .postcard__img {
-      max-width: 300px;
+      max-width: 400px;
       max-height: 100%;
       transition: transform 0.3s ease;
     }
@@ -5305,7 +5321,9 @@ html.no-csstransitions .s-hero__content {
   
     @media screen and (max-width: 400px){
         .s-hero__content h1 {
-            font-size: 90px;
+            font-size:8rem;
+            position: relative;
+            bottom: 120px;
         }
         
     }

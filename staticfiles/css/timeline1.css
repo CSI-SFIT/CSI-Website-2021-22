@@ -51,6 +51,7 @@
     border-radius: 4px;
     background: #f5f5f5;
     box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    
   }
   .timeline-content::after {
     content: "";
@@ -87,6 +88,8 @@
   }
   .timeline-card p {
     padding: 0 20px;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight:900;
   }
   .timeline-card a {
     margin-left: 20px;
@@ -100,18 +103,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 260px;
+    
   }
   
   .timeline-img-header {
-    height: 200px;
+    height: auto;
     position: relative;
-    margin-bottom: 20px;
   }
-  .timeline-img-header h2 {
-    color: #FFFFFF;
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
+  .timeline-content h2 {
+    font-size:35px;
+    color: black;
+    font-weight: bold;
+    width:100%;
+    margin:0;
+    padding-top:10px;
+    font-family: 'Encode Sans', sans-serif;
   }
   
   blockquote {
