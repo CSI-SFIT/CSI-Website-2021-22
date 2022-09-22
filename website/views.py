@@ -51,3 +51,7 @@ def magazines_single(request,year):
         raise Http404("Wrong Year for Magazine")
     else:
         return render(request, "magazine_single.html",{"year":year})
+
+def github(request):
+    return render(request,"github.html")
+
