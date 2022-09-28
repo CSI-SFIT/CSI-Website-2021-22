@@ -26,13 +26,13 @@
 
 **Try running this on your Desktop**
 ---
-1. Clone repository: `$ git checkout https://github.com/CSI-SFIT/CSI-Website-2021-new`.
+1. Clone repository: `$ git checkout https://github.com/CSI-SFIT/CSI-Website-2021-22`.
 2. Open a terminal and type: `$ pip install -r requirements.txt` .
 3. Now type in terminal: `$ python manage.py runserver` .
 
 **How to Contribute**
 ---
-1. Clone repo and create a new branch: `$ git checkout https://github.com/CSI-SFIT/CSI-Website-2021-new`.
+1. Clone repo and create a new branch: `$ git checkout https://github.com/CSI-SFIT/CSI-Website-2021-22`.
 2. Make changes and test.
 3. Submit Pull Request with comprehensive description of changes.
 
